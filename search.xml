@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title></title>
+      <url>%2F2017%2F04%2F17%2Fmk%2F</url>
+      <content type="text"><![CDATA[Markdown简介 Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。 —— 维基百科 正如您在阅读的这份文档，它使用简单的符号标识不同的标题，将某些文字标记为粗体或者斜体，创建一个链接或一个脚注[^demo]。下面列举了几个高级功能，更多语法请按Ctrl + /查看帮助。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[my first post]]></title>
+      <url>%2F2017%2F04%2F17%2Fmy-first-post%2F</url>
+      <content type="text"><![CDATA[title: my new post #可以改成中文的，如“新文章”date: 2016-02-21 16:04:09 #发表日期，一般不改动categories: blog #文章文类 tags: [文章] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上，在之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more 才能看到。写完文章后，你可以使用1.$ hexo g生成静态文件。2.$ hexo s在本地预览效果。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>%2F2017%2F04%2F17%2Fhello-world%2F</url>
+      <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    </entry>
+
+    
+  
+  
+</search>
