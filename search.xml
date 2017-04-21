@@ -4,8 +4,8 @@
     
     <entry>
       <title><![CDATA[零基础github+hexo+NexT主题搭建自己的博客]]></title>
-      <url>%2F2017%2F04%2F20%2F%E9%9B%B6%E5%9F%BA%E7%A1%80github%2Bhexo%2BNexT%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%20%2F</url>
-      <content type="text"><![CDATA[配置环境背景：windows环境下搭建 1.安装Node(必须)]]></content>
+      <url>%2F2017%2F04%2F21%2F%E9%9B%B6%E5%9F%BA%E7%A1%80github%2Bhexo%2BNexT%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%20%2F</url>
+      <content type="text"><![CDATA[配置环境 背景：windows环境下搭建 安装Hexo相当简单，在此之前你的电脑上必须先安装 Node.js:用来搭建Hexo的，版本v6.10.2 Git:把本地的内容提交到github上，版本2.8.3.windows.1 如果你的电脑上已经安装了这两个程序,那么下面可以开始正式操作了 在任意磁盘新建一个文件夹，我这里是在E盘新建了Blog的文件夹 进入Blog文件夹任意地方右键，选择Git Bash]]></content>
     </entry>
 
     
