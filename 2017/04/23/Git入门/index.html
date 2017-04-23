@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="github,hexo,blog," />
+  <meta name="keywords" content="Git," />
 
 
 
@@ -87,19 +87,20 @@
 
 
 
-<meta name="description" content="配置环境背景：windows环境下搭建 安装Hexo相当简单，在此之前你的电脑上必须先安装  Node.js:用来搭建Hexo的，版本v6.10.2 Git:把本地的内容提交到github上，版本2.8.3.windows.1  如果你的电脑上已经安装了这两个程序,那么下面可以开始正式操作了  在任意磁盘新建一个文件夹，我这里是在E盘新建了Blog的文件夹 进入Blog文件夹任意地方右键，选择Gi">
-<meta name="keywords" content="github,hexo,blog">
+<meta name="description" content="简介git是一个版本控制系统，采用了分布式版本库的方式，不必服务端软件支持。 git安装配置 安装  本人在window下运行，下载：git客户端。安装完成后在任意地方右键可以发现Git Bash菜单   配置  Git 提供了一个叫做 git config 的工具，专门用来配置或读取相应的工作环境变量。这些环境变量，决定了 Git 在各个环节的具体工作方式和行为。这些变量可以存放在以下三个不同的">
+<meta name="keywords" content="Git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="零基础github+hexo+NexT主题搭建自己的博客">
-<meta property="og:url" content="http://yoursite.com/2017/04/22/零基础github+hexo+NexT主题搭建自己的博客 /index.html">
+<meta property="og:title" content="Git入门">
+<meta property="og:url" content="http://yoursite.com/2017/04/23/Git入门/index.html">
 <meta property="og:site_name" content="求索">
-<meta property="og:description" content="配置环境背景：windows环境下搭建 安装Hexo相当简单，在此之前你的电脑上必须先安装  Node.js:用来搭建Hexo的，版本v6.10.2 Git:把本地的内容提交到github上，版本2.8.3.windows.1  如果你的电脑上已经安装了这两个程序,那么下面可以开始正式操作了  在任意磁盘新建一个文件夹，我这里是在E盘新建了Blog的文件夹 进入Blog文件夹任意地方右键，选择Gi">
+<meta property="og:description" content="简介git是一个版本控制系统，采用了分布式版本库的方式，不必服务端软件支持。 git安装配置 安装  本人在window下运行，下载：git客户端。安装完成后在任意地方右键可以发现Git Bash菜单   配置  Git 提供了一个叫做 git config 的工具，专门用来配置或读取相应的工作环境变量。这些环境变量，决定了 Git 在各个环节的具体工作方式和行为。这些变量可以存放在以下三个不同的">
 <meta property="og:image" content="https://raw.githubusercontent.com/sharewiller/note/master/images/gitBash.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/sharewiller/note/master/images/hexoDir.png">
-<meta property="og:updated_time" content="2017-04-23T07:18:23.766Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/sharewiller/note/master/images/git/gitInit.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sharewiller/note/master/images/git/gitDir.png">
+<meta property="og:updated_time" content="2017-04-23T12:06:16.457Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="零基础github+hexo+NexT主题搭建自己的博客">
-<meta name="twitter:description" content="配置环境背景：windows环境下搭建 安装Hexo相当简单，在此之前你的电脑上必须先安装  Node.js:用来搭建Hexo的，版本v6.10.2 Git:把本地的内容提交到github上，版本2.8.3.windows.1  如果你的电脑上已经安装了这两个程序,那么下面可以开始正式操作了  在任意磁盘新建一个文件夹，我这里是在E盘新建了Blog的文件夹 进入Blog文件夹任意地方右键，选择Gi">
+<meta name="twitter:title" content="Git入门">
+<meta name="twitter:description" content="简介git是一个版本控制系统，采用了分布式版本库的方式，不必服务端软件支持。 git安装配置 安装  本人在window下运行，下载：git客户端。安装完成后在任意地方右键可以发现Git Bash菜单   配置  Git 提供了一个叫做 git config 的工具，专门用来配置或读取相应的工作环境变量。这些环境变量，决定了 Git 在各个环节的具体工作方式和行为。这些变量可以存放在以下三个不同的">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/sharewiller/note/master/images/gitBash.png">
 
 
@@ -120,21 +121,21 @@
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"请输入关键字","hits_empty":"没有找到与 [${query}] 相关的内容","hits_stats":"${hits} 条相关记录,共耗时${time} ms"}
+      hits: "",
+      labels: ""
     }
   };
 </script>
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/04/22/零基础github+hexo+NexT主题搭建自己的博客 /"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/23/Git入门/"/>
 
 
 
 
 
-  <title> 零基础github+hexo+NexT主题搭建自己的博客 | 求索 </title>
+  <title> Git入门 | 求索 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -184,7 +185,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">路漫漫其修远兮 吾将上下而求索</p>
+        <h1 class="site-subtitle" itemprop="description">路漫漫其修远兮 吾将上下而求索</h1>
       
   </div>
 
@@ -306,7 +307,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/22/零基础github+hexo+NexT主题搭建自己的博客 /">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/23/Git入门/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShareWiller">
@@ -323,14 +324,14 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
             
             
               
-                零基础github+hexo+NexT主题搭建自己的博客
+                Git入门
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -342,8 +343,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-22T00:19:23+08:00">
-                2017-04-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-23T19:05:20+08:00">
+                2017-04-23
               </time>
             
 
@@ -365,8 +366,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/环境搭建/" itemprop="url" rel="index">
-                    <span itemprop="name">环境搭建</span>
+                  <a href="/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
                   </a>
                 </span>
 
@@ -383,7 +384,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a class="cloud-tie-join-count" href="/2017/04/22/零基础github+hexo+NexT主题搭建自己的博客 /#comments" itemprop="discussionUrl">
+                <a class="cloud-tie-join-count" href="/2017/04/23/Git入门/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count join-count" itemprop="commentCount"></span>
                 </a>
               </span>
@@ -410,31 +411,29 @@
       
 
       
-        <h3 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h3><p>背景：windows环境下搭建</p>
-<p>安装Hexo相当简单，在此之前你的电脑上必须先安装</p>
-<ul>
-<li><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>:用来搭建Hexo的，版本v6.10.2</li>
-<li><a href="https://git-scm.com/download" target="_blank" rel="external">Git</a>:把本地的内容提交到github上，版本2.8.3.windows.1</li>
+        <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>git是一个版本控制系统，采用了<a href="http://baike.baidu.com/link?url=tURcf2tPE4FjqUFiKCfnpdXAwfXad8ZA2-gS3iWhFz3v0PFm2ZiV1_lD8reE7sNoGGMdZlxbFjHQiJKHpiwQM_mXFthg5kedRVT5JvyrKujSHx-i-I2nlSU0Yi0ykvqPBw3_iZxFm8Ze2wRK6DeKdK" target="_blank" rel="external">分布式</a>版本库的方式，不必服务端软件支持。</p>
+<h3 id="git安装配置"><a href="#git安装配置" class="headerlink" title="git安装配置"></a>git安装配置</h3><ul>
+<li><strong>安装</strong></li>
 </ul>
-<p>如果你的电脑上已经安装了这两个程序,那么下面可以开始正式操作了</p>
-<ul>
-<li>在任意磁盘新建一个文件夹，我这里是在E盘新建了Blog的文件夹</li>
-<li>进入Blog文件夹任意地方右键，选择Git Bash</li>
-</ul>
+<p>本人在window下运行，下载：<a href="https://git-scm.com/download" target="_blank" rel="external">git客户端</a>。安装完成后在任意地方右键可以发现Git Bash菜单</p>
 <p><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/gitBash.png" alt="GitBash"></p>
 <ul>
-<li><p>现在可以使用nmp安装hexo</p>
-<blockquote>
-<p>npm install -g hexo-cli</p>
-</blockquote>
-</li>
-<li><p>安装玩hexo后运行一下命令在指定的文件夹中新建所需要的文件</p>
-<blockquote>
-<p>hexo init</p>
-</blockquote>
-</li>
+<li><strong>配置</strong></li>
 </ul>
-<p>生成文件夹如下图：<br><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/hexoDir.png" alt="hexo文件结构"></p>
+<p>Git 提供了一个叫做 git config 的工具，专门用来配置或读取相应的工作环境变量。<br>这些环境变量，决定了 Git 在各个环节的具体工作方式和行为。这些变量可以存放在以下三个不同的地方：<br>&nbsp;&nbsp;&nbsp;&nbsp;1./etc/gitconfig 文件：系统中对所有用户都普遍适用的配置。若使用 git config 时用 –system 选项，读写的就是这个文件。<br>&nbsp;&nbsp;&nbsp;&nbsp;2.~/.gitconfig 文件：用户目录下的配置文件只适用于该用户。若使用 git config 时用 –global 选项，读写的就是这个文件。<br>&nbsp;&nbsp;&nbsp;&nbsp;3.当前项目的 Git 目录中的配置文件（也就是工作目录中的 .git/config 文件）：这里的配置仅仅针对当前项目有效。每一个级别的配置都会覆盖上层的相同配置，所以 .git/config 里的配置会覆盖 /etc/gitconfig 中的同名变量。<br>在 Windows 系统上，Git 会找寻用户主目录下的 .gitconfig 文件。主目录即 $HOME 变量指定的目录，一般都是 C:\Documents and Settings\$USER。<br>此外，Git 还会尝试找寻 /etc/gitconfig 文件，只不过看当初 Git 装在什么目录，就以此作为根目录来定位。</p>
+<ul>
+<li><strong>用户信息</strong></li>
+</ul>
+<p>配置个人的用户名和电子邮件：</p>
+<blockquote>
+<p>$ git config –global user.name “yourname”<br>$ git config –global user.email youremail@qq.com</p>
+</blockquote>
+<p>如果用了 –global 选项，那么更改的配置文件就是位于你用户主目录下（~/.gitconfig）的那个，以后你所有的项目都会默认使用这里配置的用户信息。<br>如果要在某个特定的项目中使用其他名字或者电邮，只要去掉 –global 选项重新配置即可，新的设定保存在当前项目的 .git/config 文件里。</p>
+<h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><p>选择一个目录为你的仓库地址，新建文件夹git(比如E:/git)作为以后所有项目的总空间。然后新建文件夹demo作为第一个工程的名称。<br>进入git bash运行一下命令初始化版本库：  </p>
+<blockquote>
+<p>git init  </p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/git/gitInit.png" alt="gitInit"><br>运行结束之后会发现demo文件夹下多了一个.git的隐藏目录<br><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/git/gitDir.png" alt="gitDir"><br>表示这个目录是git来跟踪管理的，没事千万不要手动乱改这个目录里面的文件，否则，会把git仓库给破坏了</p>
 
       
     </div>
@@ -469,11 +468,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/github/" rel="tag"># github</a>
-          
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
-          
-            <a href="/tags/blog/" rel="tag"># blog</a>
+            <a href="/tags/Git/" rel="tag"># Git</a>
           
         </div>
       
@@ -486,15 +481,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/23/新文档/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/23/零基础github+hexo+NexT主题搭建自己的博客/" rel="prev" title="零基础github+hexo+NexT主题搭建博客">
+                零基础github+hexo+NexT主题搭建博客 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -566,8 +561,8 @@
                alt="ShareWiller" />
           <p class="site-author-name" itemprop="name">ShareWiller</p>
            
-              <p class="site-description motion-element" itemprop="description">何不趁青春年少!</p>
-          
+              <p class="site-description motion-element" itemprop="description"></p>
+           
         </div>
         <nav class="site-state motion-element">
 
@@ -585,7 +580,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -596,7 +591,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -651,7 +646,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置环境"><span class="nav-number">1.</span> <span class="nav-text">配置环境</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git安装配置"><span class="nav-number">2.</span> <span class="nav-text">git安装配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建版本库"><span class="nav-number">3.</span> <span class="nav-text">创建版本库</span></a></li></ol></div>
             
 
           </div>

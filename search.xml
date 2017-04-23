@@ -3,7 +3,14 @@
   
     
     <entry>
-      <title><![CDATA[零基础github+hexo+NexT主题搭建自己的博客]]></title>
+      <title><![CDATA[Git入门]]></title>
+      <url>%2F2017%2F04%2F23%2FGit%E5%85%A5%E9%97%A8%2F</url>
+      <content type="text"><![CDATA[简介git是一个版本控制系统，采用了分布式版本库的方式，不必服务端软件支持。 git安装配置 安装 本人在window下运行，下载：git客户端。安装完成后在任意地方右键可以发现Git Bash菜单 配置 Git 提供了一个叫做 git config 的工具，专门用来配置或读取相应的工作环境变量。这些环境变量，决定了 Git 在各个环节的具体工作方式和行为。这些变量可以存放在以下三个不同的地方：&nbsp;&nbsp;&nbsp;&nbsp;1./etc/gitconfig 文件：系统中对所有用户都普遍适用的配置。若使用 git config 时用 –system 选项，读写的就是这个文件。&nbsp;&nbsp;&nbsp;&nbsp;2.~/.gitconfig 文件：用户目录下的配置文件只适用于该用户。若使用 git config 时用 –global 选项，读写的就是这个文件。&nbsp;&nbsp;&nbsp;&nbsp;3.当前项目的 Git 目录中的配置文件（也就是工作目录中的 .git/config 文件）：这里的配置仅仅针对当前项目有效。每一个级别的配置都会覆盖上层的相同配置，所以 .git/config 里的配置会覆盖 /etc/gitconfig 中的同名变量。在 Windows 系统上，Git 会找寻用户主目录下的 .gitconfig 文件。主目录即 $HOME 变量指定的目录，一般都是 C:\Documents and Settings\$USER。此外，Git 还会尝试找寻 /etc/gitconfig 文件，只不过看当初 Git 装在什么目录，就以此作为根目录来定位。 用户信息 配置个人的用户名和电子邮件： $ git config –global user.name “yourname”$ git config –global user.email youremail@qq.com 如果用了 –global 选项，那么更改的配置文件就是位于你用户主目录下（~/.gitconfig）的那个，以后你所有的项目都会默认使用这里配置的用户信息。如果要在某个特定的项目中使用其他名字或者电邮，只要去掉 –global 选项重新配置即可，新的设定保存在当前项目的 .git/config 文件里。 创建版本库选择一个目录为你的仓库地址，新建文件夹git(比如E:/git)作为以后所有项目的总空间。然后新建文件夹demo作为第一个工程的名称。进入git bash运行一下命令初始化版本库： git init 运行结束之后会发现demo文件夹下多了一个.git的隐藏目录表示这个目录是git来跟踪管理的，没事千万不要手动乱改这个目录里面的文件，否则，会把git仓库给破坏了]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[零基础github+hexo+NexT主题搭建博客]]></title>
       <url>%2F2017%2F04%2F23%2F%E9%9B%B6%E5%9F%BA%E7%A1%80github%2Bhexo%2BNexT%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%2F</url>
       <content type="text"><![CDATA[配置环境背景：windows环境下搭建 安装Hexo相当简单，在此之前你的电脑上必须先安装 Node.js:用来搭建Hexo的，版本v6.10.2 Git:把本地的内容提交到github上，版本2.8.3.windows.1 如果你的电脑上已经安装了这两个程序,那么下面可以开始正式操作了 在任意磁盘新建一个文件夹，我这里是在E盘新建了Blog的文件夹 进入Blog文件夹任意地方右键，选择Git Bash 现在可以使用nmp安装hexo npm install -g hexo-cli 安装玩hexo后运行一下命令在指定的文件夹中新建所需要的文件 hexo init 生成文件夹如下图： .├── _config.yml //网站的 配置 信息，您可以在此配置大部分的参数。├── package.json├── scaffolds //模版 文件夹。当您新建文章时，Hexo 会根据 scaffold 来建立文件。├── source //资源文件夹是存放用户资源的地方。└── themes //主题 文件夹。Hexo 会根据主题来生成静态页面。 至此hexo就搭建完成了，在E:/Blog下右键点击git bash 然后运行一下命令： hexo g //编辑文件hexo s//启动本地服务 然后在浏览器输入localhost:4000就可以进入Hexo的主页了，如下图： 在新建自己的博客文章之前我们来认识认识常见的hexo命令 hexo g //全名为hexo generate,用于生成静态文件hexo s //全名为hexo server,用于启动服务器，主要用来本地预览hexo d //全名为hexo deploy,用于将本地文件发布到github上hexo n //全名为hexo new,用于新建一篇文章 新建自己的文章，运行 hexo new “myDemo”在source/_posts文件夹下就会生成myDemo.md文件，打开编辑之后 链接到github 登录到github,注册自己的账号 新建自己的repository 在站点配置文件[your_hexo_home]/_config.xml中配置自己github的地址 git g //编译.md文件生成.html静态文件git d //发布到自己刚刚新建的repository中 然后访问自己的博客求索就可以进入自己的博客了 NexT主题进入[your_hexo_home]/themes/可以看见主题是默认主题landspace,我们自定义主题使用NexT 在此目录下右键选择git bash git clone https://github.com/iissnan/hexo-theme-next 修改clone下来的文件夹名称为next 修改主目录（[your_hexo_home]/_config.yml）文件，theme: next 注意yml文件中key和value之间有空格 最后在next/_config.yml文件中修改配置信息可以得到自己想要的布局结果，我的最终布局如下： 请登录我的博客求索查看 参考文章Hexo文档官方文档 NexT官方文档]]></content>
     </entry>
