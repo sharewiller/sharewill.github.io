@@ -399,31 +399,24 @@
       
         
           
-            <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>git是一个版本控制系统，采用了<a href="http://baike.baidu.com/link?url=tURcf2tPE4FjqUFiKCfnpdXAwfXad8ZA2-gS3iWhFz3v0PFm2ZiV1_lD8reE7sNoGGMdZlxbFjHQiJKHpiwQM_mXFthg5kedRVT5JvyrKujSHx-i-I2nlSU0Yi0ykvqPBw3_iZxFm8Ze2wRK6DeKdK" target="_blank" rel="external">分布式</a>版本库的方式，不必服务端软件支持。</p>
-<h3 id="git安装配置"><a href="#git安装配置" class="headerlink" title="git安装配置"></a>git安装配置</h3><ul>
-<li><strong>安装</strong></li>
-</ul>
-<p>本人在window下运行，下载：<a href="https://git-scm.com/download" target="_blank" rel="external">git客户端</a>。安装完成后在任意地方右键可以发现Git Bash菜单</p>
-<p><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/gitBash.png" alt="GitBash"></p>
-<ul>
-<li><strong>配置</strong></li>
-</ul>
-<p>Git 提供了一个叫做 git config 的工具，专门用来配置或读取相应的工作环境变量。<br>这些环境变量，决定了 Git 在各个环节的具体工作方式和行为。这些变量可以存放在以下三个不同的地方：<br>&nbsp;&nbsp;&nbsp;&nbsp;1./etc/gitconfig 文件：系统中对所有用户都普遍适用的配置。若使用 git config 时用 –system 选项，读写的就是这个文件。<br>&nbsp;&nbsp;&nbsp;&nbsp;2.~/.gitconfig 文件：用户目录下的配置文件只适用于该用户。若使用 git config 时用 –global 选项，读写的就是这个文件。<br>&nbsp;&nbsp;&nbsp;&nbsp;3.当前项目的 Git 目录中的配置文件（也就是工作目录中的 .git/config 文件）：这里的配置仅仅针对当前项目有效。每一个级别的配置都会覆盖上层的相同配置，所以 .git/config 里的配置会覆盖 /etc/gitconfig 中的同名变量。<br>在 Windows 系统上，Git 会找寻用户主目录下的 .gitconfig 文件。主目录即 $HOME 变量指定的目录，一般都是 C:\Documents and Settings\$USER。<br>此外，Git 还会尝试找寻 /etc/gitconfig 文件，只不过看当初 Git 装在什么目录，就以此作为根目录来定位。</p>
-<ul>
-<li><strong>用户信息</strong></li>
-</ul>
-<p>配置个人的用户名和电子邮件：</p>
-<blockquote>
-<p>$ git config –global user.name “yourname”<br>$ git config –global user.email youremail@qq.com</p>
-</blockquote>
-<p>如果用了 –global 选项，那么更改的配置文件就是位于你用户主目录下（~/.gitconfig）的那个，以后你所有的项目都会默认使用这里配置的用户信息。<br>如果要在某个特定的项目中使用其他名字或者电邮，只要去掉 –global 选项重新配置即可，新的设定保存在当前项目的 .git/config 文件里。</p>
-<h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><p>选择一个目录为你的仓库地址，新建文件夹git(比如E:/git)作为以后所有项目的总空间。然后新建文件夹demo作为第一个工程的名称。<br>进入git bash运行一下命令初始化版本库：  </p>
-<blockquote>
-<p>git init  </p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/git/gitInit.png" alt="gitInit"><br>运行结束之后会发现demo文件夹下多了一个.git的隐藏目录<br><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/git/gitDir.png" alt="gitDir"><br>表示这个目录是git来跟踪管理的，没事千万不要手动乱改这个目录里面的文件，否则，会把git仓库给破坏了</p>
+          简介git是一个版本控制系统，采用了分布式版本库的方式，不必服务端软件支持。
+git安装配置
+安装
 
-          
+本人在window下运行，下载：git客户端。安装完成后在任意地方右键可以发现Git Bash菜单
+
+
+配置
+
+Git 提供了一个叫做 git config 的工具，专门用来配置或读取相应的工作环境
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/23/Git入门/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -564,75 +557,23 @@
       
         
           
-            <h3 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h3><p>背景：windows环境下搭建</p>
-<p>安装Hexo相当简单，在此之前你的电脑上必须先安装</p>
-<ul>
-<li><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>:用来搭建Hexo的，版本v6.10.2</li>
-<li><a href="https://git-scm.com/download" target="_blank" rel="external">Git</a>:把本地的内容提交到github上，版本2.8.3.windows.1</li>
-</ul>
-<p>如果你的电脑上已经安装了这两个程序,那么下面可以开始正式操作了</p>
-<ul>
-<li>在任意磁盘新建一个文件夹，我这里是在E盘新建了Blog的文件夹</li>
-<li>进入Blog文件夹任意地方右键，选择Git Bash</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/gitBash.png" alt="GitBash"></p>
-<ul>
-<li>现在可以使用nmp安装hexo<blockquote>
-<p>npm install -g hexo-cli</p>
-</blockquote>
-</li>
-<li>安装玩hexo后运行一下命令在指定的文件夹中新建所需要的文件<blockquote>
-<p>hexo init</p>
-</blockquote>
-</li>
-</ul>
-<p>生成文件夹如下图：</p>
-<p><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/hexoDir.png" alt="hexo文件结构"></p>
-<blockquote>
-<p>.<br>├── _config.yml //网站的 配置 信息，您可以在此配置大部分的参数。<br>├── package.json<br>├── scaffolds     //模版 文件夹。当您新建文章时，Hexo 会根据 scaffold 来建立文件。<br>├── source     //资源文件夹是存放用户资源的地方。<br>└── themes     //主题 文件夹。Hexo 会根据主题来生成静态页面。</p>
-</blockquote>
-<p>至此hexo就搭建完成了，在E:/Blog下右键点击git bash 然后运行一下命令：</p>
-<blockquote>
-<p>hexo g //编辑文件<br>hexo s//启动本地服务</p>
-</blockquote>
-<p>然后在浏览器输入localhost:4000就可以进入Hexo的主页了，如下图：</p>
-<p><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/hexoHome.png" alt="hexo 默认主页"></p>
-<p>在新建自己的博客文章之前我们来认识认识常见的hexo命令</p>
-<blockquote>
-<p>hexo g //全名为hexo generate,用于生成静态文件<br>hexo s //全名为hexo server,用于启动服务器，主要用来本地预览<br>hexo d //全名为hexo deploy,用于将本地文件发布到github上<br>hexo n //全名为hexo new,用于新建一篇文章</p>
-</blockquote>
-<p>新建自己的文章，运行</p>
-<blockquote>
-<p>hexo new “myDemo”<br>在source/_posts文件夹下就会生成myDemo.md文件，打开编辑之后</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/myDemo.png" alt="myDemo"></p>
-<p><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/demoPage.png" alt="demoPage"></p>
-<h3 id="链接到github"><a href="#链接到github" class="headerlink" title="链接到github"></a>链接到github</h3><ul>
-<li>登录到<a href="https://github.com/" target="_blank" rel="external">github</a>,注册自己的账号</li>
-<li>新建自己的repository</li>
-<li>在站点配置文件[your_hexo_home]/_config.xml中配置自己github的地址</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/gitLink.png" alt="配置github仓库"></p>
-<blockquote>
-<p>git g //编译<em>.md文件生成</em>.html静态文件<br>git d //发布到自己刚刚新建的repository中</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/gitBlogFile.png" alt="github上传博客文件"></p>
-<p>然后访问自己的博客<a href="https://sharewiller.github.io" target="_blank" rel="external">求索</a>就可以进入自己的博客了</p>
-<h3 id="NexT主题"><a href="#NexT主题" class="headerlink" title="NexT主题"></a>NexT主题</h3><p>进入[your_hexo_home]/themes/可以看见主题是默认主题landspace,我们自定义主题使用NexT</p>
-<ul>
-<li>在此目录下右键选择git bash</li>
-<li>git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a></li>
-<li>修改clone下来的文件夹名称为next</li>
-<li>修改主目录（[your_hexo_home]/_config.yml）文件，theme: next</li>
-<li>注意yml文件中key和value之间有空格</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/sharewiller/note/master/images/nextTheme.png" alt="next主题"></p>
-<p>最后在next/_config.yml文件中修改配置信息可以得到自己想要的布局结果，我的最终布局如下：</p>
-<p>请登录我的博客<strong><a href="https://sharewiller.github.io" target="_blank" rel="external">求索</a></strong>查看</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">Hexo文档官方文档</a></p>
-<p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">NexT官方文档</a></p>
+          配置环境背景：windows环境下搭建
+安装Hexo相当简单，在此之前你的电脑上必须先安装
 
-          
+Node.js:用来搭建Hexo的，版本v6.10.2
+Git:把本地的内容提交到github上，版本2.8.3.windows.1
+
+如果你的电脑上已经安装了这两个程序,那么下面可以开始正式操作了
+
+在任
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/23/零基础github+hexo+NexT主题搭建自己的博客/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -732,7 +673,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
