@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="centos," />
 
 
 
@@ -87,16 +87,17 @@
 
 
 
-<meta name="description" content="何不趁青春年少！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="###三种方法如果你把软件包安装在/usr/local/soft目录下方法一：  直接运行命令export PATH=$PATH:/usr/local/soft/[安装软件的bin目录]  但是使用这种方法，只会对当前会话有效，也就是说每当登出或注销系统以后之前的设置就会无效 方法二：    执行vi ~/.bash_profile修改文件中PATH一行，将/usr/local/soft/[安装软">
+<meta name="keywords" content="centos">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOS修改环境变量">
+<meta property="og:url" content="http://yoursite.com/2017/07/22/CentOS修改环境变量/index.html">
 <meta property="og:site_name" content="求索">
-<meta property="og:description" content="何不趁青春年少！">
-<meta property="og:updated_time" content="2017-04-24T15:38:29.099Z">
+<meta property="og:description" content="###三种方法如果你把软件包安装在/usr/local/soft目录下方法一：  直接运行命令export PATH=$PATH:/usr/local/soft/[安装软件的bin目录]  但是使用这种方法，只会对当前会话有效，也就是说每当登出或注销系统以后之前的设置就会无效 方法二：    执行vi ~/.bash_profile修改文件中PATH一行，将/usr/local/soft/[安装软">
+<meta property="og:updated_time" content="2017-07-22T12:15:13.965Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于我">
-<meta name="twitter:description" content="何不趁青春年少！">
+<meta name="twitter:title" content="CentOS修改环境变量">
+<meta name="twitter:description" content="###三种方法如果你把软件包安装在/usr/local/soft目录下方法一：  直接运行命令export PATH=$PATH:/usr/local/soft/[安装软件的bin目录]  但是使用这种方法，只会对当前会话有效，也就是说每当登出或注销系统以后之前的设置就会无效 方法二：    执行vi ~/.bash_profile修改文件中PATH一行，将/usr/local/soft/[安装软">
 
 
 
@@ -124,19 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/22/CentOS修改环境变量/"/>
 
 
 
 
 
-  <title>
-  
-
-  
-    关于我 | 求索
-  
-</title>
+  <title> CentOS修改环境变量 | 求索 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -170,7 +165,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -299,18 +294,236 @@
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
 
-	<h2 class="post-title" itemprop="name headline">关于我</h2>
+  
 
+  
+  
+  
 
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/22/CentOS修改环境变量/">
 
-</header>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ShareWiller">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/sharewiller.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="求索">
+    </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                CentOS修改环境变量
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-22T18:05:06+08:00">
+                2017-07-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a class="cloud-tie-join-count" href="/2017/07/22/CentOS修改环境变量/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count join-count" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
-    
+      
+
+      
+        <p>###三种方法<br>如果你把软件包安装在/usr/local/soft目录下<br><strong>方法一：</strong></p>
+<blockquote>
+<p>直接运行命令<font color="red">export PATH=$PATH:/usr/local/soft/[安装软件的bin目录]</font></p>
+</blockquote>
+<p>但是使用这种方法，只会对当前会话有效，也就是说每当登出或注销系统以后之前的设置就会无效</p>
+<p><strong>方法二：</strong>  </p>
+<blockquote>
+<p>执行vi ~/.bash_profile修改文件中PATH一行，将<font color="red">/usr/local/soft/[安装软件的bin目录]</font> 加入到PATH=$PATH:$HOME/bin一行之后<br>执行source ~/.bash_profile 使其生效，这种方法只对当前登陆用户生效</p>
+</blockquote>
+<p>但是这种方法只对当前登录用户有效  </p>
+<p><strong>方法三：</strong></p>
+<blockquote>
+<p>修改/etc/profile文件使其永久性生效，并对所有系统用户生效，在文件末尾加上如下两行代码<br>PATH=$PATH:<font color="red">/usr/local/soft/[安装软件的bin目录]</font><br>export PATH<br>最后执行命令source /etc/profile或 执行点命令 ./profile使其修改生效，执行完可通过echo $PATH命令查看是否添加成功。</p>
+</blockquote>
+<h3 id="不修改环境变量的其它方法"><a href="#不修改环境变量的其它方法" class="headerlink" title="不修改环境变量的其它方法"></a>不修改环境变量的其它方法</h3><blockquote>
+<p>将<font color="red">/usr/local/soft/[安装软件的bin目录]</font>下的可执行文件copy到/usr/local/bin目录下</p>
+</blockquote>
+<p>因为我们echo $PATH可以发现当前PATH的配置是</p>
+<blockquote>
+<p>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin<br>说明我们执行命令行时会去这几个目录下寻找</p>
+</blockquote>
+<p>下面比较下这几个目录下放的具体是什么命令:<br>1.所有用户皆可用的系统程序放在/bin<br>2.超级用户才能使用的系统程序放在/sbin<br>3.所有用户都可用的应用程序放在/usr/bin<br>4.超级用户才能使用的应用程序放在/usr/sbin<br>5.所有用户都可用的与本地机器无关的程序存放在/usr/local/bin<br>6.超级用户才能使用的与本地机器无关的程序存放在/usr/local/sbin</p>
+<p>usr 指 Unix System Resource，而不是User<br>通常/usr/bin下面的都是系统预装的可执行程序，会随着系统升级而改变<br>/usr/local/bin目录是给用户放置自己的可执行程序的地方，推荐放在这里，不会被系统升级而覆盖同名文件</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.png" alt="ShareWiller wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的公众号！</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/centos/" rel="tag"># centos</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/02/Linux下源码安装,rpm安装和yum安装软件的区别/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
   </div>
 
 
@@ -319,6 +532,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+    
+  </div>
+
 
         </div>
         
@@ -338,8 +557,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/sharewiller.jpg"
@@ -421,6 +649,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#不修改环境变量的其它方法"><span class="nav-number">1.</span> <span class="nav-text">不修改环境变量的其它方法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -543,6 +787,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
